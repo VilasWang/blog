@@ -1,0 +1,22 @@
+{
+  "tech_keywords": [
+    "API", "REST", "JSON", "XML", "HTTP", "HTTPS", "TCP", "UDP",
+    "SQL", "NoSQL", "MongoDB", "MySQL", "PostgreSQL", "Redis",
+    "Python", "JavaScript", "TypeScript", "Java", "C++", "C#", "Go",
+    "React", "Vue", "Angular", "Node.js", "Express", "Django", "Flask",
+    "Docker", "Kubernetes", "CI/CD", "Git", "GitHub", "GitLab",
+    "Linux", "Windows", "macOS", "Ubuntu", "CentOS",
+    "AWS", "Azure", "GCP", "阿里云", "腾讯云",
+    "AI", "机器学习", "深度学习", "神经网络", "TensorFlow", "PyTorch",
+    "区块链", "比特币", "以太坊", "智能合约",
+    "微服务", "分布式", "高并发", "负载均衡", "缓存",
+    "前端", "后端", "全栈", "架构师", "DevOps",
+    "测试", "单元测试", "集成测试", "E2E", "自动化测试"
+  ],
+  "stop_words": [
+    "的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都", "一", "一个",
+    "上", "也", "很", "到", "说", "要", "去", "你", "会", "着", "没有", "看", "好",
+    "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for", "of",
+    "with", "by", "is", "are", "was", "were", "be", "been", "have", "has", "had"
+  ]
+}

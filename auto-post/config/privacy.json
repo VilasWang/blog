@@ -1,0 +1,101 @@
+{
+  "sensitive_patterns": {
+    "api_keys": [
+      "sk-[a-zA-Z0-9]{48}",
+      "AIza[a-zA-Z0-9_-]{35}",
+      "AKIA[0-9A-Z]{16}",
+      "ya29\\.[a-zA-Z0-9_-]+",
+      "[a-zA-Z0-9_-]{40}:x-oauth-basic",
+      "xoxb-[0-9]{13}-[0-9]{13}-[a-zA-Z0-9]{24}",
+      "ghp_[a-zA-Z0-9]{36}"
+    ],
+    "passwords": [
+      "password[:\\s=]+[\"']?[^\"'\\s]{6,}",
+      "pwd[:\\s=]+[\"']?[^\"'\\s]{6,}",
+      "pass[:\\s=]+[\"']?[^\"'\\s]{6,}"
+    ],
+    "emails": [
+      "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+    ],
+    "phone_numbers": [
+      "1?[0-9]{3}-[0-9]{3}-[0-9]{4}",
+      "\\([0-9]{3}\\)\\s?[0-9]{3}-[0-9]{4}",
+      "1?[0-9]{3}\\.[0-9]{3}\\.[0-9]{4}",
+      "1[3-9][0-9]{9}",
+      "86[0-9]{11}"
+    ],
+    "ip_addresses": [
+      "\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b"
+    ],
+    "domains": [
+      "([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}"
+    ],
+    "certificates": [
+      "-----BEGIN.*?-----END",
+      "-----BEGIN CERTIFICATE-----",
+      "-----BEGIN RSA PRIVATE KEY-----",
+      "-----BEGIN PRIVATE KEY-----",
+      "-----BEGIN PUBLIC KEY-----"
+    ],
+    "database_urls": [
+      "mysql://[^\\s/]+:[^\\s/]+@[^\\s/]+:[0-9]+/[^\\s]+",
+      "postgresql://[^\\s/]+:[^\\s/]+@[^\\s/]+:[0-9]+/[^\\s]+",
+      "mongodb://[^\\s/]+:[^\\s/]+@[^\\s/]+:[0-9]+/[^\\s]+",
+      "redis://[^\\s/]*:[^\\s/]*@[^\\s/]+:[0-9]+"
+    ],
+    "jwt_tokens": [
+      "eyJ[a-zA-Z0-9_-]*\\.eyJ[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]*"
+    ],
+    "private_keys": [
+      "-----BEGIN EC PRIVATE KEY-----.*?-----END EC PRIVATE KEY-----",
+      "-----BEGIN DSA PRIVATE KEY-----.*?-----END DSA PRIVATE KEY-----",
+      "-----BEGIN OPENSSH PRIVATE KEY-----.*?-----END OPENSSH PRIVATE KEY-----"
+    ]
+  },
+  "replacement_texts": {
+    "api_keys": "[API_KEY_REMOVED]",
+    "passwords": "[PASSWORD_REMOVED]",
+    "emails": "[EMAIL_REMOVED]",
+    "phone_numbers": "[PHONE_REMOVED]",
+    "ip_addresses": "[IP_ADDRESS_REMOVED]",
+    "domains": "[DOMAIN_REMOVED]",
+    "certificates": "[CERTIFICATE_REMOVED]",
+    "database_urls": "[DATABASE_URL_REMOVED]",
+    "jwt_tokens": "[JWT_TOKEN_REMOVED]",
+    "private_keys": "[PRIVATE_KEY_REMOVED]"
+  },
+  "allowed_domains": [
+    "github.com",
+    "stackoverflow.com",
+    "docs.python.org",
+    "developer.mozilla.org",
+    "nodejs.org",
+    "reactjs.org",
+    "vuejs.org",
+    "angular.io",
+    "docker.com",
+    "kubernetes.io",
+    "aws.amazon.com",
+    "azure.microsoft.com",
+    "cloud.google.com",
+    "nginx.org",
+    "apache.org",
+    "mysql.com",
+    "postgresql.org",
+    "mongodb.com",
+    "redis.io"
+  ],
+  "exclusion_patterns": [
+    "example\\.com",
+    "test\\.com",
+    "localhost",
+    "127\\.0\\.0\\.1",
+    "0\\.0\\.0\\.0",
+    "192\\.168\\.",
+    "10\\.",
+    "example",
+    "test",
+    "demo",
+    "sample"
+  ]
+}

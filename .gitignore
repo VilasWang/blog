@@ -23,3 +23,25 @@ Thumbs.db
 # Temporary files
 .tmp/
 .cache/
+
+# Auto-Post System
+# Auto-post specific ignores
+auto-post/logs/
+auto-post/batch_*.json
+auto-post/*_report*.json
+auto-post/config/processed_docs.json
+auto-post/__pycache__/
+auto-post/scripts/__pycache__/
+auto-post/*.log
+auto-post/*.log.*
+auto-post/*.manifest
+auto-post/*.spec
+auto-post/.env
+auto-post/.venv
+auto-post/venv/
+auto-post/env/
+auto-post/ENV/
+auto-post/*.backup
+auto-post/*.bak
+auto-post/*.old
+unpost/

@@ -1,0 +1,52 @@
+{
+  "system": {
+    "version": "1.0.0",
+    "batch_size": 10,
+    "max_parallel_batches": 3,
+    "timeout_seconds": 300,
+    "cleanup_temp_files": false
+  },
+  "processing": {
+    "enable_title_optimization": true,
+    "enable_structure_optimization": true,
+    "enable_blog_enhancement": true,
+    "enable_content_review": true,
+    "enable_privacy_check": true,
+    "enable_auto_deploy": false,
+    "enable_local_test": true
+  },
+  "deployment": {
+    "test_local_duration": 30,
+    "deploy_on_success": false,
+    "commit_message": "Auto-post: {{count}} articles published at {{time}}"
+  },
+  "thresholds": {
+    "max_privacy_critical_issues": 0,
+    "max_privacy_high_issues": 5,
+    "min_content_length": 100,
+    "max_title_length": 100,
+    "max_summary_length": 200,
+    "min_tags": 1,
+    "max_tags": 10
+  },
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "smtp_server": "",
+      "smtp_port": 587,
+      "username": "",
+      "password": "",
+      "recipients": []
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "",
+      "headers": {}
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "keep_logs_days": 30,
+    "rotate_size_mb": 100
+  }
+}
