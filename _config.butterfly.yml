@@ -1,0 +1,263 @@
+# Butterfly Theme Configuration - 简化版
+
+# 网站信息
+site:
+  title: CodeVerse | 技术宇宙
+  author: vilas
+  language: zh-CN
+  timezone: Asia/Shanghai
+
+# 导航菜单
+menu:
+  Home: / || fa fa-home
+  Archives: /archives/ || fa fa-archive
+  Tags: /tags/ || fa fa-tags
+  Categories: /categories/ || fa fa-folder-open
+  About: /about/ || fa fa-user-circle
+
+# 代码主题
+code_theme:
+  light: github-light
+  dark: github-dark
+  highlight_copy: true
+  highlight_lang: true
+
+# 社交图标
+social:
+  Github: https://github.com/VilasWang || fab fa-github
+
+# 图片和背景配置
+lazyload:
+  enable: true
+
+# 首页顶部图片/视频背景 - 使用创意科技渐变
+index_img: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%)
+
+# 背景图片/颜色配置
+background:
+  # 方案1: 静态背景图
+  enable: true
+  url: /img/background.jpg
+  # 背景图样式
+  style:
+    repeat: no-repeat
+    position: center center
+    size: cover
+    attachment: fixed
+  # 透明度
+  opacity: 0.1
+
+# 文章顶部背景
+post_img:
+  enable: true
+  # 默认文章封面图
+  default: /img/default-cover.jpg
+  # 随机封面图
+  random:
+    enable: true
+    list:
+      - /img/cover/1.jpg
+      - /img/cover/2.jpg
+      - /img/cover/3.jpg
+
+
+# 高级视觉效果
+visual_effects:
+  # 粒子效果
+  particles:
+    enable: true
+    type: "circles"  # circles, triangles, polygons
+    color: "rgba(79, 192, 245, 0.5)"
+    number: 50
+    shape: "circle"
+    opacity: 0.8
+    size: 4
+    move:
+      enable: true
+      speed: 2
+      direction: "none"
+      random: true
+      straight: false
+      out_mode: "out"
+      bounce: false
+
+  # 星空效果
+  starry_sky:
+    enable: false
+    star_count: 1000
+    star_color: "#ffffff"
+    animation_speed: 0.5
+
+  # 波浪效果
+  waves:
+    enable: false
+    color: "rgba(79, 192, 245, 0.1)"
+    line_color: "rgba(79, 192, 245, 0.5)"
+    number: 3
+    length: [20, 40]
+    opacity: 0.5
+    frequency: 0.001
+
+  # 霓虹文字效果
+  neon_glow:
+    enable: true
+    color: "#49B1F5"
+    intensity: 1.2
+    flicker: true
+
+# TOC目录
+toc:
+  enable: true
+  number: true
+
+# 文章设置
+post_meta:
+  page:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+  post:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+
+# 相关文章
+related_post:
+  enable: true
+  limit: 6
+
+# 版权信息
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 分享功能
+sharejs:
+  enable: true
+  sites: wechat,weibo,qq
+
+# 侧边栏
+aside:
+  enable: true
+  card_author:
+    enable: true
+    button:
+      enable: true
+      text: 关于
+      icon: fa fa-paper-plane
+      link: /about/
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 8
+  card_tags:
+    enable: true
+    limit: 10
+  card_webinfo:
+    enable: true
+
+# 评论系统
+comments:
+  use: Valine
+  lazyload: true
+  count: true
+
+# Valine评论
+valine:
+  appId: # 请填入您的appId
+  appKey: # 请填入您的appKey
+  placeholder: 请留下你的宝贵意见
+  avatar: monsterid
+  pageSize: 10
+  lang: zh-CN
+
+# 主题颜色
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+
+# 动画背景
+canvas_nest:
+  enable: true
+  color: "102,204,255"  # 蓝色粒子
+  opacity: 0.6
+  zIndex: -1
+  count: 99
+  mobile: false
+
+# 彩虹线条动画
+canvas_fluttering_ribbon:
+  enable: false
+  mobile: false
+
+# Canvas 背景动画
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+  mobile: false
+
+# 打字机效果
+typewriter:
+  enable: true
+  typeSpeed: 70
+  cursorChar: "_"
+  loop: false
+  text: "在代码的宇宙中，探索技术的无限可能..."
+
+# 鼠标点击效果
+click_effect:
+  enable: true
+  light: "#FFC0CB"  # 浅色模式下的点击效果
+  dark: "#1B1B1B"     # 暗色模式下的点击效果
+
+# 搜索功能
+local_search:
+  enable: true
+
+# 暗黑模式
+darkmode:
+  enable: true
+  button: true
+
+# 字体设置
+font:
+  font_size: 16px
+  code_font_size: 85%
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    copyright: true
+    since: 2025
+
+# PWA
+pwa:
+  enable: false
+
+# CDN
+CDN:
+  css_main: /css/index.css
+  js_main: /js/main.js
+  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.5.0/css/all.min.css
+
+# 图文展示
+fancybox: true
+
+# 数学公式
+mathjax:
+  enable: true
+
+# 阅读模式
+readmode:
+  enable: true
