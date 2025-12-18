@@ -220,8 +220,8 @@ click_effect:
   dark: "#1B1B1B"     # 暗色模式下的点击效果
 
 # 搜索功能
-local_search:
-  enable: true
+search:
+  use: false
 
 # 暗黑模式
 darkmode:
@@ -248,8 +248,7 @@ pwa:
 CDN:
   css_main: /css/index.css
   js_main: /js/main.js
-  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.5.0/css/all.min.css
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.3/source/js/utils.js
 
 # 图文展示
 fancybox: true
