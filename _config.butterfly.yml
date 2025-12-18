@@ -83,14 +83,14 @@ visual_effects:
 
   # 星空效果
   starry_sky:
-    enable: false
+    enable: true
     star_count: 1000
     star_color: "#ffffff"
     animation_speed: 0.5
 
   # 波浪效果
   waves:
-    enable: false
+    enable: true
     color: "rgba(79, 192, 245, 0.1)"
     line_color: "rgba(79, 192, 245, 0.5)"
     number: 3
@@ -163,17 +163,22 @@ aside:
 
 # 评论系统
 comments:
-  use: Valine
+  use: Giscus
   lazyload: true
   count: true
 
-# Valine评论
-valine:
-  appId: # 请填入您的appId
-  appKey: # 请填入您的appKey
-  placeholder: 请留下你的宝贵意见
-  avatar: monsterid
-  pageSize: 10
+# Giscus
+# https://giscus.app/
+giscus:
+  repo: VilasWang/VilasWang.github.io # 您的用户名/仓库名 (例如: VilasWang/VilasWang.github.io)
+  repo_id: R_kgDOQkzqvg # 仓库 ID
+  category: Announcements
+  category_id: DIC_kwDOQkzqvs4Cz99h # 分类 ID
+  mapping: pathname
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: light
   lang: zh-CN
 
 # 主题颜色
@@ -221,7 +226,26 @@ click_effect:
 
 # 搜索功能
 search:
-  use: false
+  use: local_search
+
+local_search:
+  enable: true
+  preload: false
+  CDN:
+
+
+# PJAX
+pjax:
+  enable: true
+  exclude:
+
+# Busuanzi Statistics
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+
 
 # 暗黑模式
 darkmode:
@@ -260,3 +284,10 @@ mathjax:
 # 阅读模式
 readmode:
   enable: true
+
+# 注入配置 (Inject) - 用于自定义 HTML/CSS/JS
+inject:
+  head:
+    - "<style> .top-announcement { background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); color: #333; text-align: center; padding: 10px 0; font-size: 14px; font-weight: bold; width: 100%; border-bottom: 1px solid #eee; } </style>"
+  bottom:
+    - "<script> document.addEventListener('DOMContentLoaded', function() { var announcement = document.createElement('div'); announcement.className = 'top-announcement'; announcement.innerHTML = '🚀 欢迎来到 CodeVerse 技术宇宙！'; document.body.insertBefore(announcement, document.body.firstChild); }); </script>"
