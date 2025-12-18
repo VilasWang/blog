@@ -5,6 +5,7 @@ categories:
 tags:
   - 技术文档
   - 指南
+description: 专业的技术文档，详细说明如何实现基于 JWT 的服务器端用户认证系统，涵盖注册、登录、Token 刷新及安全防护。
 abbrlink: ec4e5506
 date: 2025-12-09 14:09:55
 ---

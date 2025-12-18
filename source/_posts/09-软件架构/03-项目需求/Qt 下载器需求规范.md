@@ -5,6 +5,7 @@ categories:
 tags:
   - 技术文档
   - 指南
+description: 详细说明基于 Qt 框架开发的桌面下载管理器的核心功能、用户场景、非功能性需求及数据模型。
 abbrlink: 6ee89f12
 date: 2025-12-09 14:09:54
 ---

@@ -5,6 +5,7 @@ categories:
 tags:
   - 技术文档
   - 指南
+description: 详细介绍了 Graphviz 和 DOT 语言的使用方法，包含基础语法、属性配置及复杂流程图的绘制技巧。
 abbrlink: 445c44cb
 date: 2025-12-09 14:09:55
 ---

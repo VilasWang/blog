@@ -5,6 +5,7 @@ categories:
 tags:
   - 技术文档
   - 指南
+description: 深入浅出地介绍 Web 认证的核心概念，对比 Session-Cookie、JWT Token 和 OAuth 认证方案的优缺点及适用场景。
 abbrlink: f2ed900f
 date: 2025-12-09 14:09:56
 ---
