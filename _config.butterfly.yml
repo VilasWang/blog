@@ -9,11 +9,11 @@ site:
 
 # 导航菜单
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  About: /about/ || fa fa-user-circle
+  首页: / || fa fa-home
+  归档: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  关于: /about/ || fa fa-user-circle
 
 # 代码主题
 code_theme:
@@ -30,8 +30,8 @@ social:
 lazyload:
   enable: true
 
-# 首页顶部图片/视频背景 - 使用创意科技渐变
-index_img: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%)
+# 首页顶部图片/视频背景 - 使用深邃星空渐变
+index_img: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)"
 
 # 背景图片/颜色配置
 background:
@@ -149,6 +149,9 @@ aside:
       text: 关于
       icon: fa fa-paper-plane
       link: /about/
+  card_announcement:
+    enable: true
+    content: "🚀 欢迎来到 CodeVerse！这里专注于深度技术解析与实战经验分享。"
   card_recent_post:
     enable: true
     limit: 5
@@ -184,8 +187,9 @@ giscus:
 # 主题颜色
 theme_color:
   enable: true
-  main: "#49B1F5"
-  paginator: "#00c4b6"
+  main: "#5c7cff"
+  paginator: "#4c6ef5"
+  button_hover: "#4263eb"
 
 # 动画背景
 canvas_nest:
@@ -256,6 +260,8 @@ darkmode:
 font:
   font_size: 16px
   code_font_size: 85%
+  font_family: "'Inter', '-apple-system', 'BlinkMacSystemFont', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'"
+  code_font_family: "'JetBrains Mono', 'Fira Code', 'Consolas', monospace"
 
 # 页脚
 footer:
