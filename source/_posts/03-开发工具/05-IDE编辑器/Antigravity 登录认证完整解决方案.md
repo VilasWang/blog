@@ -124,12 +124,12 @@ Antigravity 是一款基于云原生的开发平台，采用 OAuth 2.0 标准进
 ```yaml
 # Google Auth & Antigravity 必须走代理
 rules:
-  - 'DOMAIN-SUFFIX,googleapis.com,🔰 节点选择'
-  - 'DOMAIN-SUFFIX,sandbox.googleapis.com,🔰 节点选择'
-  - 'DOMAIN,oauth2.googleapis.com,🔰 节点选择'
-  - 'DOMAIN,accounts.google.com,🔰 节点选择'
-  - 'DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,🔰 节点选择'
-  - 'PROCESS-NAME,Antigravity.exe,🔰 节点选择'
+    - 'DOMAIN-SUFFIX,googleapis.com,🔰 节点选择'
+    - 'DOMAIN-SUFFIX,sandbox.googleapis.com,🔰 节点选择'
+    - 'DOMAIN,oauth2.googleapis.com,🔰 节点选择'
+    - 'DOMAIN,accounts.google.com,🔰 节点选择'
+    - 'DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,🔰 节点选择'
+    - 'PROCESS-NAME,Antigravity.exe,🔰 节点选择'
 ```
 
 ### 3.2 Proxifier 配置

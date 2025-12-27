@@ -51,7 +51,7 @@ date: 2025-12-18 09:09:23
 | 要求项 | 规格 | 说明 |
 |--------|------|------|
 | **协议支持** | ✅ HTTPS | 必须支持 SSL/TLS |
-| **端口配置** | ✅ 自定义端口 | 支持常用端口（8080, 7890, 10808等） |
+| **端口配置** | ✅ 自定义端口 | 支持常用端口（7890, 7890, 10808等） |
 | **连接稳定性** | ✅ 高可用 | 99%+ 连接成功率 |
 | **带宽要求** | ✅ > 1Mbps | 满足 API 调用需求 |
 
@@ -108,7 +108,7 @@ curl -I https://google.com
 ping 216.239.32.223
 
 # 测试 HTTPS 代理
-curl -x http://127.0.0.1:8080 https://www.google.com
+curl -x http://127.0.0.1:7890 https://www.google.com
 ```
 
 ## Gemini CLI 安装配置
@@ -152,9 +152,9 @@ gemini --version
 **CMD 环境**：
 
 ```batch
-rem 设置 HTTP 代理
-set HTTP_PROXY=http://127.0.0.1:8080
-set HTTPS_PROXY=https://127.0.0.1:8080
+rem 设置 HTTP 代理（换成你自己的代理地址）
+set HTTP_PROXY=http://127.0.0.1:7890
+set HTTPS_PROXY=https://127.0.0.1:7890
 
 rem 验证设置
 echo %HTTP_PROXY%
@@ -165,8 +165,8 @@ echo %HTTPS_PROXY%
 
 ```powershell
 # 设置代理环境变量
-$env:HTTP_PROXY="http://127.0.0.1:8080"
-$env:HTTPS_PROXY="https://127.0.0.1:8080"
+$env:HTTP_PROXY="http://127.0.0.1:7890"
+$env:HTTPS_PROXY="https://127.0.0.1:7890"
 
 # 验证设置
 $env:HTTP_PROXY
@@ -177,16 +177,16 @@ $env:HTTPS_PROXY
 
 ```bash
 # Bash/Zsh 环境
-export HTTP_PROXY=http://127.0.0.1:8090
-export HTTPS_PROXY=https://127.0.0.1:8090
+export HTTP_PROXY=http://127.0.0.1:7890
+export HTTPS_PROXY=https://127.0.0.1:7890
 
 # 验证设置
 echo $HTTP_PROXY
 echo $HTTPS_PROXY
 
 # 添加到配置文件（永久生效）
-echo 'export HTTP_PROXY=http://127.0.0.1:8090' >> ~/.bashrc
-echo 'export HTTPS_PROXY=https://127.0.0.1:8090' >> ~/.bashrc
+echo 'export HTTP_PROXY=http://127.0.0.1:7890' >> ~/.bashrc
+echo 'export HTTPS_PROXY=https://127.0.0.1:7890' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -305,16 +305,16 @@ curl -v -x $HTTPS_PROXY https://httpbin.org/ip
 
 ```bash
 # 临时设置（当前会话有效）
-export HTTPS_PROXY=http://127.0.0.1:8090
+export HTTPS_PROXY=http://127.0.0.1:7890
 
 # 永久设置（写入配置文件）
-echo 'export HTTPS_PROXY=http://127.0.0.1:8090' >> ~/.profile
+echo 'export HTTPS_PROXY=http://127.0.0.1:7890' >> ~/.profile
 source ~/.profile
 
 # 系统级设置（需要管理员权限）
 sudo tee /etc/environment > /dev/null <<EOF
-HTTPS_PROXY=http://127.0.0.1:8090
-HTTP_PROXY=http://127.0.0.1:8090
+HTTPS_PROXY=http://127.0.0.1:7890
+HTTP_PROXY=http://127.0.0.1:7890
 NO_PROXY=localhost,127.0.0.1,.local
 EOF
 ```
